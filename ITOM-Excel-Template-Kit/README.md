@@ -1,30 +1,19 @@
-# ITOM / ITSM Excel Template Kit
+# OribiServ ITOM Public Website
 
-A practical operations-management Excel pack for IT teams.
+Public front-end for the ITOM/ITSM template kit.
 
-## Included
+## Access
 
-- IT Operations Command Center
-- Service Desk and Request Operations
-- Incident Management
-- Problem Management and RCA
-- Change and Release Operations
-- SLA / OLA / Service Performance
-- Monitoring / Events / AIOps
-- Asset Inventory and CMDB
-- Vendor and Contract Operations
-- IT Continuity / Backup / Disaster Recovery
-- Governance / Risk / Controls / Audit
-- Financial / Budget / Cost / ROI
-- Capacity / Availability / Performance
-- Operations Planning / Scheduling
-- Automation / Runbooks / SOP / Continual Improvement
-- ITIL / ITSM Bonus Index and service-management worksheets
+The site may be hosted publicly. The operational workspace is intended to require GitHub OAuth and to permit only the GitHub account **NazeerK**.
 
-The workbook contains 47 sheets, standardized dropdown lookups, formula-driven derived fields, conditional formatting, structured tables, and executive KPI dashboards.
+GitHub Pages alone cannot securely enforce identity. Use a server-side OAuth callback/serverless function, verify the GitHub account, establish a secure session, and enforce the allowlist before exposing operational data.
 
-The financial worksheets are configured for ZAR.
+Never put OAuth client secrets, GitHub access tokens, passwords, or a trusted username check in browser JavaScript.
 
-## Workbook
+## Modules
 
-[Download the Excel workbook](./ITOM_ITSM_Excel_Template_Kit_OribiServ.xlsx)
+Command Center, Service Desk, Incidents, Problems, Changes, Releases, SLA/OLA, Monitoring, Assets/CMDB, Network, Servers, Applications, Software, Backup/DR, Vendors, Risk/Controls, Finance, Capacity, Automation, Knowledge, Runbooks, SOP, Continual Improvement, Planning, On-Call, Handover and RACI.
+
+## Hosting
+
+This folder can be published through GitHub Pages as the public site. For real authentication and live data, pair it with a backend/API on a platform that supports OAuth/session handling, or place the protected application behind an authenticated gateway.
